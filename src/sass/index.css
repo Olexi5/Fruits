@@ -1,0 +1,80 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .container {
+    max-width: 1245px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ae1332;
+}
+
+.nav-logo {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  color: #ae1332;
+}
+
+.nav-burger {
+  display: block;
+  font-size: 24px;
+  background-color: transparent;
+  border: 0;
+  color: #ae1332;
+}
+@media screen and (min-width: 768px) {
+  .nav-burger {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
