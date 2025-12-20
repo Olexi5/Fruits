@@ -11,6 +11,7 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 510px;
   }
   &__text {
     font-family: 'DM Sans', sans-serif;
@@ -25,6 +26,37 @@
     width: 249px;
     height: 387px;
     border-radius: 500px;
-    background-color: #A4CB66;
+    background-color: #a4cb66;
+    padding: 28px 25px 40px 25px;
+    &__name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -4%;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      margin-bottom: 61px;
+    }
+    &__description {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -4%;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #fff;
+    }
   }
+}
+.hero__item:last-child .hero__example__name{
+    margin-bottom: 19px;
+}
+.hero__item:last-child .hero__example{
+    padding: 28px 44px 40px 43px;
 }
