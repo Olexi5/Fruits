@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  color: #ae1332;
+}
+
+.nav-logo {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  color: #ae1332;
+}
