@@ -1,7 +1,7 @@
 .hero {
   padding: 56px 20px 80px 20px;
   &__title {
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-style: Medium;
     font-size: 28px;
@@ -11,5 +11,20 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fff;
+  }
+  &__text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -4%;
+    vertical-align: middle;
+  }
+  &__example {
+    width: 249px;
+    height: 387px;
+    border-radius: 500px;
+    background-color: #A4CB66;
   }
 }
