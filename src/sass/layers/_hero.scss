@@ -159,14 +159,6 @@
 .hero__item:last-child .hero__example__name {
   margin-bottom: 19px;
 }
-.hero__item:last-child .hero__example {
-  padding: 28px 44px 40px 43px;
-  background-color: #f5ce13;
-}
-.hero__item:last-child {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 44px;
-  }
+.hero__item:last-child .hero__example{
+    padding: 28px 44px 40px 43px;
 }
