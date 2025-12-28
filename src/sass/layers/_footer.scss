@@ -1,3 +1,108 @@
-.footer{
-    background-color: rgba(255, 255, 255, 1);
+.footer {
+  background: rgba(255, 255, 255, 1);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1245px) {
+    text-align: start;
+  }
+}
+.footer-lists {
+   @media screen and (min-width: 1245px) {
+   display: flex;
+   flex-direction: row;
+  }
+}
+.first-footer-list {
+  margin-bottom: 24px;
+}
+.first-fopter-item {
+}
+.footer-img {
+  width: 100%;
+  border-radius: 20%;
+  @media screen and (min-width: 768px) {
+    border-radius: 100px;
+  }
+}
+.logo-svg {
+  position: relative;
+  top: 19px;
+  right: 85px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.logo-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(174, 19, 50, 1);
+}
+.second-footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  margin-bottom: 44px;
+}
+.second-footer-item {
+}
+.footer-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+  text-align: center;
+  color: rgba(174, 19, 50, 1);
+}
+.third-footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  margin-bottom: 44px;
+}
+.third-footer-item {
+}
+.footer-svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(174, 19, 50, 1);
+  // border: 1px solid rgba(174, 19, 50, 1);
+  // border-radius: 10px;
+}
+.fourth-footer-list {
+}
+.fourth-footer-item {
+}
+.num-footer {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(174, 19, 50, 1);
+  margin-bottom: 14px;
+    text-align: center;
+}
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+    text-align: center;
+  color: rgba(174, 19, 50, 1);
+  margin-left: 100px;
+  margin-right: 100px;
 }
