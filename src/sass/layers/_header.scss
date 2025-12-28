@@ -1,6 +1,9 @@
 .header {
-  background-color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: white;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -25,6 +28,9 @@
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 14px;
@@ -41,4 +47,17 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.header-svg {
+  display: none;
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.header-svg-logo {
+  width: 20px;
+  height: 20px;
 }
