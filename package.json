@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://github.com/Olexi5/Fruits",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/index.html --port 6578",
     "build": "parcel build src/*.html --public-url /Fruits/"
   },
   "repository": {

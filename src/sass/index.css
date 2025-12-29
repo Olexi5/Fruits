@@ -252,6 +252,12 @@ body {
   border-radius: 500px;
   background-color: #a4cb66;
   padding: 28px 25px 40px 25px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__example {
+    margin-left: 32px;
+  }
 }
 .hero__example__name {
   font-family: "DM Sans", sans-serif;
@@ -284,6 +290,15 @@ body {
 
 .hero__item:last-child .hero__example {
   padding: 28px 44px 40px 43px;
+  background-color: #f5ce13;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__item:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 44px;
+  }
 }
 
 .order {
@@ -385,14 +400,98 @@ body {
   background-color: #f5ce13;
 }
 
+.fresh {
+  align-items: center;
+  text-align: center;
+}
+
+.fresh__title {
+  padding: 0 232px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -4%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  align-items: center;
+  color: white;
+}
+
+.fresh__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.frsh__text {
+  padding: 0 362px;
+  margin: 80px 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.fresh__input {
+  border: none;
+  width: 170px;
+  background-color: transparent;
+  height: 40px;
+  opacity: 1;
+}
+
+.fresh__button {
+  border: 1px solid #9dc162;
+  width: 102px;
+  height: 48px;
+  opacity: 1;
+  padding-top: 15px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  background-color: #9dc162;
+  border: none;
+  border-radius: 100px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -4%;
+  text-transform: capitalize;
+  color: white;
+}
+
+.fresh__form {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  display: flex;
+  width: 292px;
+  height: 48px;
+  border-radius: 100px;
+  border-width: 1px;
+  justify-content: center;
+  gap: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
 .footer {
   background: rgb(255, 255, 255);
   padding-top: 80px;
   padding-bottom: 80px;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    text-align: center;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1245px) {
@@ -401,15 +500,19 @@ body {
   }
 }
 
-@media screen and (min-width: 1245px) {
-  .footer-lists {
+@media screen and (min-width: 768px) {
+  .footer-container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
   }
 }
-
-.first-footer-list {
+.first-footer-div {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .first-footer-div {
+    margin-bottom: 80px;
+  }
 }
 
 .footer-img {
@@ -424,11 +527,16 @@ body {
 
 .logo-svg {
   position: relative;
-  top: 19px;
-  right: 85px;
+  top: 3px;
+  right: 0px;
   display: inline-block;
   width: 16px;
   height: 16px;
+}
+@media screen and (min-width: 1245px) {
+  .logo-svg {
+    right: 0px;
+  }
 }
 
 .logo-text {
@@ -449,6 +557,12 @@ body {
   flex-direction: row;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 1245px) {
+  .second-footer-list {
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+}
 
 .footer-link {
   font-family: "DM Sans", sans-serif;
@@ -467,11 +581,32 @@ body {
   flex-direction: row;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 768px) {
+  .third-footer-list {
+    margin-top: 100px;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .third-footer-list {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
 
 .footer-svg {
   width: 24px;
   height: 24px;
   fill: rgb(174, 19, 50);
+}
+.fourth-footer-div {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .fourth-footer-div {
+    margin-top: 44px;
+  }
 }
 
 .num-footer {
@@ -497,4 +632,17 @@ body {
   color: rgb(174, 19, 50);
   margin-left: 100px;
   margin-right: 100px;
+}
+@media screen and (min-width: 1245px) {
+  .footer-text {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1245px) {
+  .footer-left-wrap {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=index.css.map */
