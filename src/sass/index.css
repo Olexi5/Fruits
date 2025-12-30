@@ -575,10 +575,11 @@ body {
   background: rgb(255, 255, 255);
   padding-top: 80px;
   padding-bottom: 80px;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    text-align: center;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1245px) {
@@ -587,15 +588,19 @@ body {
   }
 }
 
-@media screen and (min-width: 1245px) {
-  .footer-lists {
+@media screen and (min-width: 768px) {
+  .footer-container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
   }
 }
-
-.first-footer-list {
+.first-footer-div {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .first-footer-div {
+    margin-bottom: 80px;
+  }
 }
 
 .footer-img {
@@ -610,11 +615,16 @@ body {
 
 .logo-svg {
   position: relative;
-  top: 19px;
-  right: 85px;
+  top: 3px;
+  right: 0px;
   display: inline-block;
   width: 16px;
   height: 16px;
+}
+@media screen and (min-width: 1245px) {
+  .logo-svg {
+    right: 0px;
+  }
 }
 
 .logo-text {
@@ -635,6 +645,12 @@ body {
   flex-direction: row;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 1245px) {
+  .second-footer-list {
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+}
 
 .footer-link {
   font-family: "DM Sans", sans-serif;
@@ -653,11 +669,32 @@ body {
   flex-direction: row;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 768px) {
+  .third-footer-list {
+    margin-top: 100px;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .third-footer-list {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
 
 .footer-svg {
   width: 24px;
   height: 24px;
   fill: rgb(174, 19, 50);
+}
+.fourth-footer-div {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .fourth-footer-div {
+    margin-top: 44px;
+  }
 }
 
 .num-footer {
@@ -683,4 +720,17 @@ body {
   color: rgb(174, 19, 50);
   margin-left: 100px;
   margin-right: 100px;
+}
+@media screen and (min-width: 1245px) {
+  .footer-text {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1245px) {
+  .footer-left-wrap {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=index.css.map */

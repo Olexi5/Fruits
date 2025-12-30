@@ -2,23 +2,27 @@
   background: rgba(255, 255, 255, 1);
   padding-top: 80px;
   padding-bottom: 80px;
+  text-align: start;
   @media screen and (min-width: 768px) {
-    text-align: center;
+    text-align: start;
   }
   @media screen and (min-width: 1245px) {
     text-align: start;
   }
 }
-.footer-lists {
-   @media screen and (min-width: 1245px) {
-   display: flex;
-   flex-direction: row;
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1245px) {
   }
 }
-.first-footer-list {
+.first-footer-div {
   margin-bottom: 24px;
-}
-.first-fopter-item {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
 }
 .footer-img {
   width: 100%;
@@ -29,11 +33,14 @@
 }
 .logo-svg {
   position: relative;
-  top: 19px;
-  right: 85px;
+  top: 3px;
+  right: 0px;
   display: inline-block;
   width: 16px;
   height: 16px;
+  @media screen and (min-width: 1245px) {
+    right: 0px;
+  }
 }
 .logo-text {
   font-family: 'DM Sans', sans-serif;
@@ -51,6 +58,10 @@
   gap: 20px;
   flex-direction: row;
   margin-bottom: 44px;
+  @media screen and (min-width: 1245px) {
+    margin-top: 100px;
+    margin-left: 200px;
+  }
 }
 .second-footer-item {
 }
@@ -69,19 +80,30 @@
   gap: 20px;
   flex-direction: row;
   margin-bottom: 44px;
-}
-.third-footer-item {
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    margin-bottom: 44px;
+  }
+  @media screen and (min-width: 1245px) {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
 }
 .footer-svg {
   width: 24px;
   height: 24px;
   fill: rgba(174, 19, 50, 1);
+  @media screen and (min-width: 1245px) {
+  }
   // border: 1px solid rgba(174, 19, 50, 1);
   // border-radius: 10px;
 }
-.fourth-footer-list {
-}
-.fourth-footer-item {
+.fourth-footer-div {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-top: 44px;
+  }
 }
 .num-footer {
   font-family: 'DM Sans', sans-serif;
@@ -92,7 +114,7 @@
   text-transform: uppercase;
   color: rgba(174, 19, 50, 1);
   margin-bottom: 14px;
-    text-align: center;
+  text-align: center;
 }
 .footer-text {
   font-family: 'DM Sans', sans-serif;
@@ -101,8 +123,18 @@
   line-height: 18px;
   letter-spacing: 0%;
   text-transform: uppercase;
-    text-align: center;
+  text-align: center;
   color: rgba(174, 19, 50, 1);
   margin-left: 100px;
   margin-right: 100px;
+  @media screen and (min-width: 1245px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.footer-left-wrap {
+  @media screen and (min-width: 1245px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
