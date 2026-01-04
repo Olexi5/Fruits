@@ -1,5 +1,6 @@
 .hero {
   padding: 56px 20px 80px 20px;
+  position: relative;
   &__title {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
@@ -11,18 +12,25 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fff;
+    margin: 0 auto;
     margin-bottom: 386px;
     @media screen and (min-width: 768px) {
       font-size: 50px;
       line-height: 54px;
       margin-bottom: 513px;
     }
+    @media screen and (min-width: 1245px) {
+      font-size: 64px;
+      line-height: 64px;
+      margin-bottom: 483px;
+      width: 898px;
+    }
   }
   &__img {
     position: absolute;
     width: 335px;
     height: 509px;
-    top: 154px;
+    top: 104px;
     left: 20px;
     border-radius: 500px;
     z-index: -1;
@@ -30,8 +38,12 @@
     @media screen and (min-width: 768px) {
       width: 452px;
       height: 702px;
-      top: 172px;
+      top: 122px;
       left: 158px;
+    }
+    @media screen and (min-width: 1245px) {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   &__banana {
@@ -48,6 +60,12 @@
       top: 219px;
       left: 27.22px;
     }
+    @media screen and (min-width: 1245px) {
+      width: 183.21px;
+      height: 124.61px;
+      top: 191px;
+      left: 213px;
+    }
   }
   &__strawberry {
     width: 56px;
@@ -62,6 +80,12 @@
       height: 108px;
       top: 105px;
       left: 623px;
+    }
+    @media screen and (min-width: 1245px) {
+      width: 120px;
+      height: 120px;
+      top: 39px;
+      left: 937px;
     }
   }
   &__btn {
@@ -99,12 +123,14 @@
       justify-content: center;
       gap: 144px;
     }
+    @media screen and (min-width: 1245px) {
+      position: absolute;
+      top: 386px;
+      gap: 658px;
+    }
   }
   &__text {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
     line-height: 18px;
     letter-spacing: -4%;
     vertical-align: middle;
@@ -156,13 +182,12 @@
     &__name {
       font-family: 'DM Sans', sans-serif;
       font-weight: 400;
-      font-style: normal;
       font-size: 12px;
+      color: #ffffff;
       line-height: 14px;
       letter-spacing: -4%;
       text-align: center;
       vertical-align: middle;
-      color: #fff;
       margin-bottom: 61px;
     }
     &__description {
@@ -175,7 +200,7 @@
       text-align: center;
       vertical-align: middle;
       text-transform: uppercase;
-      color: #fff;
+      color: #ffffff;
     }
   }
 }
@@ -185,11 +210,14 @@
 .hero__item:last-child .hero__example {
   padding: 28px 44px 40px 43px;
   background-color: #f5ce13;
+  margin-bottom: 44px;
 }
 .hero__item:last-child {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
-    gap: 44px;
   }
+}
+.hero__btn:hover {
+  color: #a4cb66;
 }
